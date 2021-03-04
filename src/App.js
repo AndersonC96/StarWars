@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import Navbar from "./components/Navbar";
 import './App.css';
 
 function App() {
@@ -49,9 +50,9 @@ function App() {
   }, []);
   return (
     <div className="App">
-      Star Wars
+      <Navbar/>
     </div>
-  );
+  )
 }
 
 export default App;
