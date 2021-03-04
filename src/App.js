@@ -46,13 +46,7 @@ function App() {
     fetchSpecies();
     fetchStarships();
     fetchVehicles();
-  }, [])
-  console.log("data", people);
-  console.log("data", planets);
-  /*console.log('films', films);
-  console.log('species', species);
-  console.log('starships', starships);
-  console.log('vehicles', vehicles);*/
+  }, []);
   return (
     <div className="App">
       Star Wars
