@@ -1,8 +1,8 @@
 import React from 'react'
-export default function People(){
+export default function Vehicles(){
     return(
         <div>
-            <p>People</p>
+            <p>Vehicles</p>
         </div>
     )
 }

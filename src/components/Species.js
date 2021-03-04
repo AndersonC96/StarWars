@@ -1,8 +1,8 @@
 import React from 'react'
-export default function People(){
+export default function Species(){
     return(
         <div>
-            <p>People</p>
+            <p>Species</p>
         </div>
     )
 }

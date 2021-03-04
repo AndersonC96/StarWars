@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import Navbar from "./components/Navbar";
-import './App.css';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 function App() {
   const [people, setPeople] = useState([]);
@@ -50,7 +50,9 @@ function App() {
   }, []);
   return (
     <div className="App">
+      <Router>
       <Navbar/>
+      </Router>
     </div>
   )
 }
