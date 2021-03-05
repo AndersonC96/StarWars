@@ -1,8 +1,44 @@
-import React from 'react'
-export default function Vehicles(){
+import React from 'react';
+import {Card, Grid} from 'semantic-ui-react';
+export default function Vehicles({data}){
     return(
-        <div>
-            <p>Vehicles</p>
-        </div>
+        <>
+            <h1>Vehicles</h1>
+            <Grid columns={5}>
+                {data.map((vehicles, i) => {
+                    return(
+                        <Grid.Column key={i}>
+                            <Card>
+                                <Card.Content>
+                                    <Card.Header>{vehicles.name}</Card.Header>
+                                    <Card.Description>
+                                        <strong>Model</strong>
+                                            <p>{vehicles.model}</p>
+                                        <strong>Manufacturer</strong>
+                                            <p>{vehicles.manufacturer}</p>
+                                        <strong>Cost in Credits</strong>
+                                            <p>{vehicles.cost_in_credits}</p>
+                                        <strong>Length</strong>
+                                            <p>{vehicles.length}</p>
+                                        <strong>Max Atmosphering Speed</strong>
+                                            <p>{vehicles.max_atmosphering_speed}</p>
+                                        <strong>Crew</strong>
+                                            <p>{vehicles.crew}</p>
+                                        <strong>Passengers</strong>
+                                            <p>{vehicles.passengers}</p>
+                                        <strong>Cargo Capacity</strong>
+                                            <p>{vehicles.cargo_capacity}</p>
+                                        <strong>Consumables</strong>
+                                            <p>{vehicles.consumables}</p>
+                                        <strong>Vehicle Class</strong>
+                                            <p>{vehicles.vehicle_class}</p>
+                                    </Card.Description>
+                                </Card.Content>
+                            </Card>
+                        </Grid.Column>
+                    );
+                })}
+            </Grid>
+        </>
     )
 }

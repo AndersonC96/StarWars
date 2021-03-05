@@ -1,17 +1,17 @@
 import React from 'react';
 import {Menu, Container} from 'semantic-ui-react';
+import {Link} from 'react-router-dom';
 export default function Navbar(){
     return(
         <Menu inverted>
             <Container>
-                <Menu.Item name="Star Wars API"/>
-                <Menu.Item name="People"/>
-                <Menu.Item name="Planets"/>
-                <Menu.Item name="Films"/>
-                <Menu.Item name="Species"/>
-                <Menu.Item name="Starships"/>
-                <Menu.Item name="Vehicles"/>
-                <Menu.Item name="Disney Plus"/>
+                <Link to='/'><Menu.Item name="Star Wars API"/></Link>
+                <Link to='/people'><Menu.Item name="People"/></Link>
+                <Link to='/planets'><Menu.Item name="Planets"/></Link>
+                <Link to='/films'><Menu.Item name="Films"/></Link>
+                <Link to='/species'><Menu.Item name="Species"/></Link>
+                <Link to='/starships'><Menu.Item name="Starships"/></Link>
+                <Link to='/vehicles'><Menu.Item name="Vehicles"/></Link>
             </Container>
         </Menu>
     )
