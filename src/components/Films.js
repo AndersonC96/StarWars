@@ -22,8 +22,6 @@ export default function Films({data}){
                                             <p>{films.producer}</p>
                                         <strong>Release Date</strong>
                                             <p>{films.release_date}</p>
-                                        <strong>Characters</strong>
-                                            <p>{films.characters[0]}</p>
                                     </Card.Description>
                                 </Card.Content>
                             </Card>
